@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>412</width>
+    <height>426</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Добавление аккаунта</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background: #292929;
+}
+
+QFrame{
+	color: rgb(255, 255, 255);
+}
+
+
+QLineEdit{
+    color: rgb(255, 255, 255);
+ 	border: 1px solid #ffa31a;
+    border-width: 1.5px;
+    border-radius: 5px;
+    border-color: #ffa31a;
+ 	padding: 6px;
+	height: 20px;
+ }
+
+QPushButton {
+	background-color: #ffa31a;
+    border-width: 2px;
+    border-radius: 7px;
+    border-color:  #ffa31a;
+ 	padding: 6px;}
+
+QPushButton:pressed {
+	color: rgb(255, 255, 255);
+	background-color: #FF801A;
+	border-color: #D17B37;
+    border-style: inset;
+}
+QComboBox {
+    border: 1px solid #ffa31a;
+	border-width: 1.5px;
+    border-radius: 5px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+	height: 27px;
+}
+
+QComboBox:editable {
+    background: white;
+
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+
+    border-left-width: 2px;
+    border-left-color: #ffa31a;
+    border-left-style: solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow {
+   color: black;
+
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+
+    color: rgb(255, 255, 255);
+}
+
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+
+color: rgb(255, 255, 255);
+}
+
+QComboBox:on {
+
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+
+
+
+
+QProgressBar {
+    border: 2px solid grey;
+    border-radius: 5px;
+	text-align: center;
+	color: white;
+}
+
+QProgressBar::chunk {
+    background-color: #ffa31a;
+    width: 20px;
+	margin: 0.5px;
+}
+
+
+QTabWidget::pane {
+    border-top: 1px solid  #808080;
+}
+
+QTabWidget::tab-bar {
+    left: 10px; 
+}
+
+QTabBar::tab {
+	border-color:  #ffa31a;
+	background-color: #ffa31a;
+    border: 2px solid #292929;
+    border-bottom-color: #292929;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    min-width: 15ex;
+    padding: 2px;
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.55 rgba(235, 148, 61, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0)) ;
+}
+
+QTabBar::tab:selected {
+    border-color: #292929;
+    border-bottom-color: #292929; 
+}
+
+QTabBar::tab:!selected {
+    margin-top: 2px; 
+}
+
+QTabBar::tab:selected {
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+QTabBar::tab:first:selected {
+    margin-left: 0; 
+}
+
+QTabBar::tab:last:selected {
+    margin-right: 0; 
+}
+
+QTabBar::tab:only-one {
+    margin: 0; 
+}
+
+QSpinBox {
+    padding-right: 15px;
+	
+	
+	
+	color: rgb(255, 255, 255);
+    border-width: 3;
+}
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="bottomMargin">
+    <number>2</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="topMargin">
+       <number>4</number>
+      </property>
+      <item row="5" column="1">
+       <widget class="QComboBox" name="comboBox_webgl">
+        <property name="minimumSize">
+         <size>
+          <width>145</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="lineEdit_profile_pass">
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QComboBox" name="comboBox_os">
+        <property name="minimumSize">
+         <size>
+          <width>145</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QComboBox" name="comboBox_render">
+        <property name="minimumSize">
+         <size>
+          <width>145</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Webgl_Vendor</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEdit_profile_login">
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0" colspan="2">
+       <widget class="QPushButton" name="pushButton_add_profile">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>Добавить в БД</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Render</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Операционка</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Пароль</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="2">
+       <widget class="QLabel" name="label_72">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Добавить аккаунт в базу данных</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Логин</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit_profile_name">
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Имя</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

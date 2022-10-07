@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "projectforavito",
+  "private_key_id": "2b0dee3fea576f86da7d8666915218219a924267",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCx+hjVOyhy1Kno\nSFRJfDYHdzRtiGR0+XV4dQojd8IA1JqIapwlj2nPgFq41UWfNmQOqbHGTjrPDB1y\nLEq9//XZLDGPRjQVAhDQGDjKvx9IvN3xma15CiD0fiZeSgRFISSfZuzjisjZR9/P\n5+V6ue1J52YjiXfpJHar5qCLX+yNW5FxH95RD5QRS48paz89PZLfec/cqQUJlDXO\n0mwssAzVGslP8esvVk3061PYIQo5w0YOKwPfZdLiroIiziO7q0Vsk9v4/oLDUhdD\nzvEA1obhLJzgV5tKivNGHTiiP9JcEri/OOZYaha3W4lGYwzbWtq9ocyHoXT2ZIeM\n+yRgx8T1AgMBAAECggEACMOfUe7EFuWEiWj4Z5b7hSIYXZV0FvOK1pfy3BzDW62c\nf3+6eToG9J4mOYhdEZJI2pT+KV0EVdpLn+nw80rFtUBRH3ROT8OGhuzObSN8u6T7\nS/Cso3N9fHSy2H1OGQZhCo1zuF/G9LYungsWGJVLy1IfDDxygHNYea4VdU+Ps0U8\nEYAtuqZ3MlJhGRdNUJySwqWeDgZcVcxKeLyrVmpZb6lQztBAHVFPrAfmTc72qRIs\nvrm7g96rnO+XPr7Sla8MMGqErRVUpR9t8lhkPrBI3bjYi5lM+jmooq8Lxy3iXdP/\ncJkeY6NzORARngegiD4je0fyPMbWrtL2Kl3sxgFmkQKBgQD4BvY7VKQKV9RvAKsd\nPxNtLp+iaHK5BgcjG5PRGNdghaB9yV6BHS120yZfsQu4jl+r8VsJv9dCVWc8b+6x\nqTzCPqqHaDW050fsx2Sm8q9O5EHP/skuPv/VDmQyJe/a/tQF4aknYI8MPx/qdVVm\nk2t6eZ85ad96vuavtyBSYmA6ZQKBgQC3sq9wWdQ9GBLYkjhqgJU+1syEin05YT4+\nJeCKc8tbvFm3BR0WdR9r4LzGzV2qWf7Qot9i9lpZxRY8QJSn8+GaPu4QCnzLDBWp\nmf8JD/Sa9u5jbG0Vcu6fMSTt9NpYH4+gyq15TQXyVYuBdW8YQsPyqlgqEqqFOFU1\nv9XFpP3vUQKBgQDgUiOXK4kllaQbNOaOEAM450cXsxG3R71iwklhfu8kbBboTRy8\n96+r3XLCbzTjmVjsAOFOowRECUvSfIXMhvzdzaGbz+NrFxaVDw14dNubJZRkUtKP\nkgj+IAL83BTf40PNgffkFk+qStlJyw8PM9usLJ2WZqvprwii+aQw/qp7hQKBgBYx\nonyifb/73psH34UOj/mNnhwNV1/NXeXIUb6oitNEiFpSZddGw0sXVfd27HAee2jd\npLuiI/xgkXUqIEvCbWljXQPXIIivpxZcorGHmff3CYo9mVhUEHxvRZTyVkb7WTEG\nC7tyENvcdgRoGcoGlwIEjq5Wnv+FdNYPnVZJvtxhAoGBAOSLP5e569Z766mN8BnS\nAnZL2GofQ7QbvoITlpGpUyqLsVQkQaOQNjgj/lvVRwXHWDkSeks6+UJSxiI6x23C\ni5oG+j9+ZIbYxt2GPVMdqY+zxrO7AzWHnou7AF64hBMsyt6MW669/TZVbf4th6qj\nohVOEUHC46W7uytgMtff3Dlg\n-----END PRIVATE KEY-----\n",
+  "client_email": "avito-john@projectforavito.iam.gserviceaccount.com",
+  "client_id": "111494150333970967334",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/avito-john%40projectforavito.iam.gserviceaccount.com"
+}
