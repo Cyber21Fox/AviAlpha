@@ -43,9 +43,12 @@ class AddProfile(QWidget):
         super(AddProfile, self).__init__()
         self.ad = Ui_Widget()
         self.ad.setupUi(self)
-        self.connection = sqlite3.connect('sqlite_python.db', check_same_thread=False)
-        self.cursor = self.connection.cursor()
-        log.info(f"База данных успешно подключена!")
+        try:
+            self.connection = sqlite3.connect('sqlite_python.db', check_same_thread=False)
+            self.cursor = self.connection.cursor()
+            log.info(f"База данных успешно подключена!")
+        except:
+            log.error(f"Не удалось подключится к БД!")
         self.ad.comboBox_os.addItems([*config.os])
         self.change_os()
         self.change_vendor()
@@ -223,6 +226,7 @@ class BuildForm():
 
     # при изменении комбобокса
     def path_combo_browser_with_login(self):
+
         name_list = []
         proxy_list = ["Без прокси"]
         self.ui.comboBox_login.clear()

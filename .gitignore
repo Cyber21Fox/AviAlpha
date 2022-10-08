@@ -3,4 +3,5 @@
 *.json
 *.db
 *.log
+*.png
 test.py
