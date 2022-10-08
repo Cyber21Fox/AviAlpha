@@ -5,3 +5,4 @@
 *.log
 *.png
 test.py
+*.gitignore
