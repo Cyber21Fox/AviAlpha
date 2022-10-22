@@ -6,16 +6,12 @@ import math
 import config
 import sqlite3
 import random
-import threading
 import traceback
-import datetime
-import requests
 import tools
 from qt.add_profile import Ui_Widget
 from exif import Image
 import logging as log
 from qt.form import Ui_MainWindow
-import multiprocessing
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from PySide6.QtWidgets import QApplication, QWidget, QMessageBox, QTableWidgetItem, QTabWidget, QFileDialog ,QHeaderView
@@ -121,7 +117,7 @@ class MainWindow(QWidget):
 
         self.profile = Profile(self.ui, self.connection, self.cursor)
         self.proxy = Proxy(self.ui, self.connection, self.cursor)
-        log.info(f'Старт {threading.current_thread().name}')
+        #log.info(f'Старт {threading.current_thread().name}')
 
         # заполнение форм
         self.buildform.path_combo_browser_with_login()
@@ -241,9 +237,6 @@ class BuildForm():
             proxy_list.append(i[2])
             print(i[2])
         self.ui.comboBox_proxy_browser.addItems([*proxy_list])
-
-class Threading:
-    pass
 
 class Profile():
     def __init__(self, parent, connection, cursor):

@@ -6,14 +6,10 @@ import time
 import config
 import selen
 import math
-import threading
 import traceback
-import datetime
-import requests
 import openpyxl
 import pandas as pd
 import logging as log
-import multiprocessing
 from qt.change_option import Ui_Widget
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -225,7 +221,9 @@ class Tools(QFileDialog):
 
     def analysis_competitor(self):
         json_com = []
-        driver = self.browser.authorization("79531136707", "M2A1NAcc0UnT322")
+        login = self.ui.comboBox_login.currentText()
+        passw = self.cursor.execute(f"SELECT * FROM  db_profile WHERE number = '{login}'").fetchone()[3]
+        driver = self.browser.authorization(login, passw)
         time.sleep(3)
         self.ui.progressBar.setValue(10)
         if self.ui.radioButton_search.isChecked():

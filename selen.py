@@ -2,11 +2,9 @@ import time
 import config
 import sqlite3
 import random
-import threading
 import traceback
 import datetime
 import logging as log
-
 from selenium import webdriver
 from user_agent import generate_navigator
 from selenium_stealth import stealth
@@ -16,7 +14,6 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from PySide6.QtWidgets import QApplication, QWidget, QMessageBox, QTableWidgetItem, QTabWidget, QFileDialog
-from multiprocessing.dummy import Pool as ThreadPool
 import chromedriver_autoinstaller as chromedriver
 import chromedriver_binary
 #chromedriver.install()
@@ -26,7 +23,6 @@ import undetected_chromedriver as uc
 class Browser():
     def __init__(self, parent):
         self.ui = parent
-        self.locker = threading.Lock()
         self.connection = sqlite3.connect('sqlite_python.db', check_same_thread=False)
         self.cursor = self.connection.cursor()
 
@@ -196,4 +192,4 @@ class Browser():
         data = self.cursor.execute(f"SELECT * FROM db_profile_bot WHERE number = '{self.ui.comboBox_bot.currentText()}'").fetchall()
         print(list(data))
         driver = self.authorization(data[0][2], data[0][3])
-        # number_acc in range(self.ui.spinBox.value()):
+
